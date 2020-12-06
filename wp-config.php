@@ -41,22 +41,22 @@
 
 /** The name of the database for WordPress */
 
-define( 'DB_NAME', '' );
+define( 'DB_NAME', $_ENV["DATABASE_NAME"] );
 
 
 /** MySQL database username */
 
-define( 'DB_USER', '' );
+define( 'DB_USER', $_ENV["DATABASE_USER"] );
 
 
 /** MySQL database password */
 
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', $_ENV["DATABASE_PASSWORD"] );
 
 
 /** MySQL hostname */
 
-define( 'DB_HOST', '' );
+define( 'DB_HOST', $_ENV["DATABASE_HOST"] );
 
 
 /** Database Charset to use in creating database tables. */
