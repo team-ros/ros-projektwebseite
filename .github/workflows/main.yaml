@@ -17,7 +17,7 @@ jobs:
           repository: roscloud/ros-projectsite
           tags: latest 
 
-      - name: deploy to cluster
+      - name: deploy to kube cluster
         uses: steebchen/kubectl@master
         env:
           KUBE_CONFIG_DATA: ${{ secrets.KUBE_CONFIG_DATA }}
